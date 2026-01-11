@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mukur Gupta</title>
+  <meta name="description" content="Mukur Gupta - Building and Breaking LLMs">
+  <meta name="keywords" content="Mukur Gupta, AI, Machine Learning, LLM, Research">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class="main">
+    <!-- Home Section with Background Slideshow -->
+    <section id="home" class="section home-section">
+      <!-- Background Slideshow -->
+      <div class="slideshow-container">
+        <div class="slide active" style="background-image: url('assets/img/backgrounds/IMGP9336.JPG');"></div>
+        <div class="slide" style="background-image: url('assets/img/backgrounds/IMG_8760.JPG');"></div>
+      </div>
+      
+      <!-- Navigation embedded on background -->
+      <nav class="nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#experience" class="nav-link">Experience</a>
+      </nav>
+
+      <!-- Foreground Content - Horizontal Layout -->
+      <div class="hero-content">
+        <div class="hero-left">
+          <div class="profile-image">
+            <img src="assets/img/profile/profile.JPG" alt="Mukur Gupta">
+          </div>
+        </div>
+        
+        <div class="hero-right">
+          <h1 class="name">Mukur Gupta</h1>
+          
+          <div class="quote-section">
+            <p class="quote">Be yourself, everyone else is already taken.</p>
+            <p class="quote-author">— Oscar Wilde</p>
+      </div>
+
+          <!-- Social Links with Icons -->
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/mukurgupta/" class="social-icon" target="_blank" rel="noopener" title="LinkedIn">
+              <img src="assets/img/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://x.com/guptamukur?s=21" class="social-icon" target="_blank" rel="noopener" title="Twitter">
+              <img src="assets/img/icons/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://github.com/mukurgupta" class="social-icon" target="_blank" rel="noopener" title="GitHub">
+              <img src="assets/img/icons/github.svg" alt="GitHub">
+            </a>
+            <a href="https://scholar.google.com/citations?hl=en&user=kFVSkKcAAAAJ&view_op=list_works&sortby=pubdate" class="social-icon" target="_blank" rel="noopener" title="Google Scholar">
+              <img src="assets/img/icons/scholar.svg" alt="Google Scholar">
+            </a>
+            <a href="#" class="social-icon" onclick="copyEmail(); return false;" title="Email">
+              <img src="assets/img/icons/email.svg" alt="Email">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slideshow Navigation - at bottom of background -->
+      <div class="slideshow-nav">
+        <button class="prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Denoising & Diffusing Intelligence @ Granica </h2>
+        <!-- <p class="tagline">Building and Breaking LLMs</p> -->
+        
+        <p>I am a researcher at Granica AI, where we are building foundation models for structured data by challenging the existing notions of discrete and continuous diffusion models. I completed my master's in Computer Science from Columbia University with the Advanced Master's in Research (AMR) advised by Prof. Kathleen McKeown. I completed my Bachelor of Technology from IIT Kharagpur, graduating as the highest GPA holder in my discipline. </p>
+        
+        <p>As a Graduate Research Assistant in the NLP Lab at Columbia University, I contributed to a DARPA grant to build multi-modal approaches for Cross-Cultural Dialogue assistance in low-resource multilingual videos. Last year, I spent my summer at Apple working on multi-modal complex diagram reasoning models. Before grad school, I worked as an Associate Data Scientist at Gartner, where I designed and engineered solutions for question-answering, high-precision product recommendation, user-interest ranking, and multi-modal information retrieval use cases. I've been recognized and nominated for multiple excellence awards for my work at Gartner.</p>
+        
+        <p>I am interested in solving challenging use cases on multi-modal video understanding, code generation, adversarial robustness, and diffusion-based generation models. My research has been presented at NAACL, CaLM @ NeurIPS'24, CL4Health @ COLING'24, and IEEE PerCom'24. Most recently, I served as a Technical Program Committee member for the SPT-IoT workshop at IEEE PerCom'26.</p>
+
+        <h3>Education</h3>
+        <ul class="education-list">
+          <li>
+            <div class="item-logo">
+              <img src="assets/img/logos/columbia.jpg" alt="Columbia University">
+            </div>
+            <div class="item-content">
+              <strong>M.S. in Computer Science</strong> (2023 - May 2025)<br>
+              <em>Columbia University, New York, NY</em><br>
+              Advanced Master's in Research (AMR) Track advised by Prof. Kathleen McKeown<br>
+              Fully funded under MS-GRA (awarded to &lt; 1% students in Engineering School)
+            </div>
+          </li>
+          <li>
+            <div class="item-logo">
+              <img src="assets/img/logos/iitkgp.png" alt="IIT Kharagpur">
+            </div>
+            <div class="item-content">
+              <strong>B.Tech (Hons.) in Mechanical Engg</strong> (2017 - 2021)<br>
+              <em>Indian Institute of Technology (IIT) Kharagpur</em><br>
+              Graduated as Department Rank 1 (highest GPA holder of stream)<br>
+              Bachelor thesis advised by Dr. Pawan Goyal
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+    <div class="container">
+        <h2>Research</h2>
+        
+        <!-- <h3>Current Projects</h3>
+        <ul class="project-list">
+          <li>
+            <strong>Complex Video Understanding by Predicting Future</strong><br>
+            Advisor: Prof. Kathleen McKeown, Columbia University<br>
+            <em><a href="https://www.cs.columbia.edu/speech/ccu/" target="_blank" rel="noopener">DARPA Funded CCU Project</a></em><br>
+            Pretraining video-language models on synthetically generated future prediction corpus
+          </li>
+          <li>
+            <strong>Privacy-Preserving Adversarial Training via Data Distillation in Federated Learning</strong><br>
+            <em>Under Review</em><br>
+            Improved robustness of client machines in Federated learning to adversarial attacks by leaking distilled image features
+          </li>
+          <li>
+            <strong>Layerwise Adaptive Multi-Query Attention for efficient inference</strong><br>
+            MQAdapt algorithm for sampling transformer layers for efficient multi-query attention with minimum performance
+          </li>
+        </ul> -->
+
+        <div class="publications">
+
+          <!-- Publication 2: Sense and Sensitivity -->
+          <div class="pub-item">
+            <h4 class="pub-title">Sense and Sensitivity: Examining the Influence of Semantic Recall on Long Context Code Reasoning</h4>
+            <p class="pub-authors">
+              Adam Štorek, <strong>Mukur Gupta</strong>, Samira Hajizadeh, Prashast Srivastava, Suman Jana
+            </p>
+            <p class="pub-venue"><em>Under Review</em>, 2025</p>
+            <p class="pub-description">
+              Proposed SemTrace, a novel technique to measure semantic code recall in LLMs, revealing significant drops in code reasoning accuracy as snippets approach the middle of input context.
+              Identified a disconnect between lexical and semantic recall mechanisms, suggesting current code reasoning benchmarks may underestimate LLM challenges in leveraging in-context information.
+            </p>
+            <p class="pub-links">
+              Links: <a href="https://arxiv.org/abs/2505.13353" target="_blank">paper</a>
+            </p>
+            <div class="pub-tags">
+              <span class="tag">placeholder</span>
+              <span class="tag">placeholder</span>
+              <span class="tag">placeholder</span>
+            </div>
+          </div>
+
+          <!-- Publication 3: XOXO -->
+          <div class="pub-item">
+            <h4 class="pub-title">XOXO: Stealthy Cross-Origin Context Poisoning Attacks against AI Coding Assistants</h4>
+            <p class="pub-authors">
+              Adam Štorek, <strong>Mukur Gupta</strong>, Noopur Bhatt, Aditya Gupta, Janie Kim, Prashast Srivastava, Suman Jana
+            </p>
+            <p class="pub-venue"><em>Under Review</em>, 2025</p>
+            <span class="pub-award">Led to a Security Fix in a Major AI Coding Assistant</span>
+            <p class="pub-description">
+              Introduced Cross-Origin Context Poisoning (XOXO), a novel attack using semantically equivalent adversarial code modifications to compromise AI coding assistants.
+              Developed GCGS algorithm achieving 83.09% attack success rate across 11 models including GPT-4o and Claude 3.5 Sonnet, demonstrating ineffectiveness of existing defenses.
+            </p>
+            <p class="pub-links">
+              Links: <a href="https://arxiv.org/abs/2503.14281" target="_blank">paper</a>
+            </p>
+            <div class="pub-tags">
+              <span class="tag">placeholder</span>
+              <span class="tag">placeholder</span>
+              <span class="tag">placeholder</span>
+            </div>
+          </div>
+
+
+          <!-- Publication 1: AdvSumm -->
+          <div class="pub-item">
+            <h4 class="pub-title">AdvSumm: Adversarial Training for Bias Mitigation in Text Summarization</h4>
+            <p class="pub-authors">
+              <strong>Mukur Gupta</strong>, Nikhil Reddy Varimalla, Nicholas Deas, Melanie Subbiah, Kathleen McKeown
+            </p>
+            <p class="pub-venue"><em>NewSumm @ EMNLP</em>, 2025</p>
+            <p class="pub-description">
+              Introduced AdvSumm, a domain-agnostic adversarial training framework that mitigates bias in text summarization through gradient-guided perturbations at the embedding level.
+              Demonstrated effective reduction of name-nationality and political framing biases without compromising summarization quality, outperforming standard transformers and data augmentation techniques.
+            </p>
+            <p class="pub-links">
+              Links: <a href="https://arxiv.org/abs/2506.06273" target="_blank">paper</a>
+            </p>
+            <div class="pub-tags">
+              <span class="tag">placeholder</span>
+              <span class="tag">placeholder</span>
+              <span class="tag">placeholder</span>
+            </div>
+          </div>
+          
+
+          <!-- Publication 4: CodeSCM -->
+          <div class="pub-item">
+            <h4 class="pub-title">CodeSCM: Causal Analysis for Multi-Modal Code Generation</h4>
+            <p class="pub-authors">
+              <strong>Mukur Gupta</strong>, Noopur Bhatt, Suman Jana
+            </p>
+            <p class="pub-venue"><em>NAACL</em>, 2025 (Oral); <em>CALM @ NeurIPS</em>, 2024 (Poster)</p>
+            <p class="pub-description">
+              Proposed CodeSCM, a Structural Causal Model for analyzing multi-modal code generation in LLMs using causal interventions and mediation analysis.
+              Discovered that input-output examples significantly influence code generation alongside natural language instructions, quantifying spurious model leanings through latent mediator variables.
+            </p>
+            <p class="pub-links">
+              Links: <a href="https://aclanthology.org/2025.naacl-long.345/" target="_blank">paper</a>
+            </p>
+            <div class="pub-tags">
+              <span class="tag">placeholder</span>
+              <span class="tag">placeholder</span>
+              <span class="tag">placeholder</span>
+            </div>
+          </div>
+
+          <!-- Publication 5: Intent Detection Biomedical -->
+          <div class="pub-item">
+            <h4 class="pub-title">Intent Detection and Entity Extraction from Biomedical Literature</h4>
+            <p class="pub-authors">
+              <strong>Mukur Gupta</strong>, Ankan Mullick, Pawan Goyal
+            </p>
+            <p class="pub-venue"><em>CL4Health @ LREC-COLING</em>, 2024 (Oral)</p>
+            <p class="pub-description">
+              Conducted comprehensive empirical evaluation showing supervised fine-tuned approaches remain more effective than general-purpose LLMs for biomedical NLP tasks.
+              Demonstrated that PubMedBERT can surpass ChatGPT on NER tasks with only 5 supervised examples, challenging the efficacy of LLMs in domain-specific understanding.
+            </p>
+            <p class="pub-links">
+              Links: <a href="https://aclanthology.org/2024.cl4health-1.33/" target="_blank">paper</a> / <a href="https://github.com/bioNLU-coling2024/biomed-NER-intent_detection" target="_blank">code</a>
+            </p>
+            <div class="pub-tags">
+              <span class="tag">placeholder</span>
+              <span class="tag">placeholder</span>
+              <span class="tag">placeholder</span>
+            </div>
+          </div>
+
+          <!-- Publication 6: IoT AI -->
+          <div class="pub-item">
+            <h4 class="pub-title">Avenues in IoT with advances in Artificial Intelligence</h4>
+            <p class="pub-authors">
+              Ankan Mullick, <strong>Mukur Gupta</strong>
+            </p>
+            <p class="pub-venue"><em>SPT-IoT @ IEEE PerCom</em>, 2024 (Oral)</p>
+            <p class="pub-description">
+              Explored current challenges in Internet of Things and the transformative impact of AI, NLP, and machine learning for domain-specific solutions.
+              Discussed future prospects of deeper fusion between NLP, machine learning, and AI to elevate IoT capabilities and reshape digital interactions.
+            </p>
+            <p class="pub-links">
+              Links: <a href="https://ieeexplore.ieee.org/document/10502625" target="_blank">paper</a>
+            </p>
+            <div class="pub-tags">
+              <span class="tag">placeholder</span>
+              <span class="tag">placeholder</span>
+            </div>
+          </div>
+
+          <!-- Publication 7: Curriculum Learning -->
+          <div class="pub-item">
+            <h4 class="pub-title">Curriculum generation using Autoencoder based continuous optimization</h4>
+            <p class="pub-authors">
+              Dipankar Sarkar, <strong>Mukur Gupta</strong>
+            </p>
+            <p class="pub-venue"><em>arXiv Preprint</em>, 2021</p>
+            <p class="pub-description">
+              Presented Training Sequence Optimization (TSO), a novel curriculum learning approach using autoencoders and continuous optimization to learn optimal training data ordering.
+              Achieved 2 AP empirical gain over random strategy on CIFAR-100 and CIFAR-10 datasets, outperforming existing state-of-the-art curriculum learning algorithms.
+            </p>
+            <p class="pub-links">
+              Links: <a href="https://arxiv.org/abs/2106.08569" target="_blank">paper</a>
+            </p>
+            <div class="pub-tags">
+              <span class="tag">placeholder</span>
+              <span class="tag">placeholder</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <ul class="experience-list">
+          <li>
+            <div class="item-logo">
+              <img src="assets/img/logos/granica.png" alt="Granica AI">
+            </div>
+            <div class="item-content">
+              <strong>Research Scientist</strong> — Granica AI, CA<br>
+              <em>June 2025 - Present</em><br>
+              Advised by Prof. Andrea Montanari, Stanford University. Developing foundation models for structured data by challenging the existing notions of discrete and continuous diffusion models. Applied Granica's ICLR award-winning data selection research (https://www.granica.ai/research) <br> to recommendation systems of a social media giant with 400 million monthly active users, driving significant gains in Click-Through Rate.
+            </div>
+          </li>
+          <li>
+            <div class="item-logo">
+              <img src="assets/img/logos/columbia.jpg" alt="Columbia University">
+            </div>
+            <div class="item-content">
+              <strong>Graduate Research Assistant</strong> — NLP Lab, Columbia University, NY<br>
+              <em>December 2023 - May 2025</em><br>
+              Contributed to a DARPA grant. Developed multi-modal large language models (LLMs) for communication changepoint detection in cross-cultural conversation videos. Designed a video-reasoning model by pre-training LLaVa on a next-scene prediction objective, and generated large-scale synthetic video–language data to enhance pre-training. Showed improvements in abductive and counterfactual video reasoning tasks.
+            </div>
+          </li>
+
+          <li>
+            <div class="item-logo">
+              <img src="assets/img/logos/apple.svg" alt="Apple">
+            </div>
+            <div class="item-content">
+              <strong>Applied Scientist Intern</strong> — Apple, CA<br>
+              <em>June 2024 - August 2024</em><br>
+              Designed a novel diagram question answering module for powering RAG pipeline on complex flowchart images by finetuning multimodal LLMs on synthetic dataset
+            </div>
+          </li>
+          <li>
+            <div class="item-logo">
+              <img src="assets/img/logos/gartner.png" alt="Gartner">
+            </div>
+            <div class="item-content">
+              <strong>Associate Data Scientist</strong> — Gartner, India<br>
+              <em>August 2021 - June 2023</em><br>
+              <ul class="nested-list">
+                <li>Patent Under Review: Co-invented peer-based product timeline recommendation and value-tracking system</li>
+                <li>Designed and engineered LLM-based (ChatGPT, Falcon, LLaMA) multi-agent Gartner research question-answering bot with toxicity and vendor bias filters</li>
+                <li>Improved the Pearson correlation of Sentence Transformer by 2% on Gartner data, used in Semantic Textual Similarity and multi-modal search</li>
+                <li>Engineered a multi-stage product recommendation engine using Deep Factorization Machine (Recall-30%) and XGBoost (NDCG@10 - 0.78)</li>
+                <li>Improved NDCG@5 of user-interest ranking by 12% with State-of-the-art Variational Auto-Encoder-based topic modeling on unstructured client inquiry texts</li>
+                <li>Designed a list-wise loss-based learning to rank (LTR) model for user interest ranking using user interaction features (MAP@5 - 0.48)</li>
+                <li>Led rapid prototyping & model monitoring by deploying experimental setup to AWS Sagemaker using MLOps integrations</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="item-logo">
+              <img src="assets/img/logos/hike.webp" alt="Hike">
+            </div>
+            <div class="item-content">
+              <strong>Machine Learning Intern</strong> — Hike, India<br>
+              <em>May 2020 - August 2020</em><br>
+              Designed a novel autoencoder based Curriculum Learning algorithm with LSTM, led to faster model convergence
+            </div>
+          </li>
+          <li>
+            <div class="item-logo">
+              <img src="assets/img/logos/algonomy.png" alt="Manthan">
+            </div>
+            <div class="item-content">
+              <strong>Data Science Intern</strong> — Manthan (Algonomy), IN<br>
+              <em>May 2019 - July 2019</em><br>
+              Using machine learning on the clickstream data of mobile app of a global pizza chain to build an intent prediction model to predict the next best time when a customer is most likely to open the mobile app to order a pizza and align all the communications (push notification, SMS, emails) at that time to boost the open rates and reduce the possibility of spamming
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Theme inspired by <a href="https://github.com/orianna-zzo/AllinOne" target="_blank" rel="noopener">AllinOne by Orianna</a></p>
+    </div>
+  </footer>
+
+  <script>
+    function copyEmail() {
+      const email = "mukur[dot]gupta1[at]gmail[dot]com";
+      navigator.clipboard.writeText(email).then(() => {
+        alert("Email copied to clipboard!");
+      });
+    }
+
+    // Slideshow functionality
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+          slide.classList.add('active');
+        }
+      });
+    }
+
+    function changeSlide(direction) {
+      currentSlide += direction;
+      if (currentSlide >= totalSlides) currentSlide = 0;
+      if (currentSlide < 0) currentSlide = totalSlides - 1;
+      showSlide(currentSlide);
+    }
+
+    // Auto-advance slideshow every 5 seconds
+    setInterval(() => {
+      changeSlide(1);
+    }, 5000);
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        if (this.getAttribute('href') === '#') return;
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          // Update active nav link
+          document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+          });
+          this.classList.add('active');
+        }
+      });
+    });
+
+    // Update active nav link on scroll and add scrolled class to nav
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('.section');
+      const navLinks = document.querySelectorAll('.nav-link');
+      const nav = document.querySelector('.nav');
+      const homeSection = document.querySelector('.home-section');
+      
+      // Add scrolled class when past home section
+      if (homeSection && window.pageYOffset > homeSection.offsetHeight - 100) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= sectionTop - 100) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
