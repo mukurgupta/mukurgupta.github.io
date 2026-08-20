@@ -83,11 +83,11 @@
         <h2>Denoising & Diffusing Intelligence @ Granica </h2>
         <!-- <p class="tagline">Building and Breaking LLMs</p> -->
 
-        <p> I am a researcher at Granica AI, where I work on foundation models for structured data focusing on generative modeling for discrete and mixed-type tabular domains. My recent work studies the interplay between continuous and discrete diffusion models on challenging combinatorial generation problems, and explores how diffusion-based modeling can support broad tabular foundation models for several generation, and predictive tasks. I am especially interested in this area because tabular data remains central to all the enterprice use cases, yet generative modeling for them is still far less explored than for language, vision, or speech. </p>
+        <p> I am a researcher at Granica AI, where I work on diffusion foundation models for structured data, building generative models for discrete and mixed-type tabular data. My work spans the pretraining, post-training, and evaluation of large diffusion models, including continuous and discrete diffusion. I am especially interested in this area because tabular data remains central to enterprise use cases, yet generative modeling for it is still far less explored than for language, vision, or speech. </p>
 
-        <p> I completed my M.S. in Computer Science at Columbia University with an Advanced Master's in Research (AMR) program, where I was advised by Prof. Kathleen McKeown and funded through my work as a Graduate Research Assistant in the NLP Lab. Before that, I earned my B.Tech. from IIT Kharagpur, graduating first in my department by GPA.</p>
+        <p> I completed my M.S. in Computer Science at Columbia University through the Advanced Master’s in Research (AMR) program, where I was advised by Prof. Kathleen McKeown and funded through my work as a Graduate Research Assistant in the NLP Lab. In the NLP Lab, I contributed to a DARPA-funded project on multimodal video understanding for cross-cultural dialogue, which involved large-scale synthetic video corpus generation and post-training video-language models for future activity prediction and abductive reasoning. Before that, I earned my B.Tech from IIT Kharagpur, graduating first in my program by GPA.</p>
 
-        <p> More broadly, my work spans diffusion models, multimodal video understanding, code generation, and recommendation systems. At Columbia, I contributed to a DARPA-funded project on complex video understanding for cross-cultural dialogue assistance in low-resource multilingual settings. I spent a summer at Apple, where I worked on multimodal diagram reasoning and diagram question answering. In LLM-based code generation, my research on the interpretability of code models was selected for an oral presentation at NAACL, and my work on adversarial attacks against code models led to a security fix in a major coding assistant. Before graduate school, I was an Associate Data Scientist at Gartner, where I built recommendation and ranking systems for product recommendation, user-interest modeling, retrieval, and research question answering, and was recognized through multiple internal excellence award nominations.</p>
+        <p> More broadly, my research spans diffusion models, multimodal reasoning, code generation, and AI safety. At Apple, I worked on multimodal reasoning over scientific diagrams and flowcharts. My research on code models with Prof. Suman Jana was presented in oral presentations at ACL and NAACL, spanning interpretability, long-context reasoning, and adversarial robustness. One project on attacks against AI coding assistants led to a security fix in a widely used AI coding assistant. Earlier, as an Associate Data Scientist at Gartner, I built large-scale recommendation and ranking systems for personalization, product discovery, user-interest modeling, retrieval, and research Q&A, and was recognized through multiple internal excellence awards.</p>
 
 
         <h3>Education</h3>
@@ -338,9 +338,10 @@
             <div class="item-content">
               <strong>Research Scientist</strong> — Granica AI, CA<br>
               <em>June 2025 - Present</em><br>
-              Developing tabular foundation model on terabyte-scale datasets using diffusion modeling to learn a unified generative model for tabular tasks. 
-              Derived novel insights into diffusion generative modeling, showing that continuous diffusion with score matching outperforms masked discrete diffusion on a computationally hard sampling problem; and introduced a noise-reweighting denoising strategy that outperforms random noising. 
-              Applied Granica's ICLR award-winning data selection research (https://www.granica.ai/research) to recommendation systems of a social media giant with 400 million monthly active users, driving significant gains in Click-Through Rate.
+              Building Large Tabular Models (LTMs): pre-training and post-training diffusion foundation models for tabular data (https://www.granica.ai/large-tabular-models); 
+              Evaluations: contributed to a scalable eval harness for generative tasks on structured data (https://github.com/granica-ai/ltm-eval); 
+              Diffusion Modeling: showed that continuous diffusion with score matching outperforms masked discrete diffusion on an NP-hard sampling problem (https://arxiv.org/pdf/2603.20589); 
+              Data Sampling: drove significant gains in Click-Through Rate for a social media giant with 400 million monthly active users with Granica's ICLR award-winning data selection research.
             </div>
           </li>
           <li>
@@ -350,7 +351,7 @@
             <div class="item-content">
               <strong>Graduate Research Assistant</strong> — NLP Lab, Columbia University, NY<br>
               <em>December 2023 - May 2025</em><br>
-              Developed multimodal video understanding systems at Columbia NLP Lab, with a focus on future activity prediction, long-video reasoning, and synthetic data generation for instruction tuning. Pretrained LLaVA-OneVision on 2M synthetic video instruction-tuning pairs for a novel future activity prediction objective, then instruction-finetuned it on a subset of the LLaVA-NeXT corpus, improving abductive and defeasible video reasoning by up to 3% over the LLaVA video baseline. Built a 6,000-hour synthetic video instruction dataset using Molmo-7B and optimized large-scale training data generation on shared NVIDIA A100 40GB GPUs through efficient frame sampling, memory-aware data loading, and slow-fast sampling for long-video processing. Contributed this work within a DARPA-funded project on cross-cultural dialogue assistance in low-resource multilingual settings, building multimodal methods for changepoint detection from video, speech, transcripts, and social-norm signals.
+              Developed multimodal video understanding systems at Columbia NLP Lab, with a focus on future activity prediction, long-video reasoning, and synthetic data generation for SFT. Post-trained LLaVA-OneVision with Supervised Fine-tuning on 2M synthetic video instruction-tuning pairs for a novel future activity prediction objective, improving abductive and defeasible video reasoning by up to 3% over the LLaVA video baseline. Built a 6,000-hour synthetic video instruction dataset using Molmo-7B and optimized large-scale training data generation through efficient frame sampling, memory-aware data loading, and slow-fast sampling for long-video processing. Contributed to this work within a DARPA project on cross-cultural dialogue assistance in low-resource multilingual settings, building multimodal methods for changepoint detection from video, speech, transcripts, and social-norm signals.
             </div>
           </li>
 
@@ -361,7 +362,7 @@
             <div class="item-content">
               <strong>Applied Scientist Intern</strong> — Apple, CA<br>
               <em>June 2024 - August 2024</em><br>
-              Built multimodal reasoning systems at Apple for diagram understanding by fine-tuning a LLaVA architecture on a synthetic diagram-to-LaTeX generation task. Developed an RCA system for planning the annual mega iPhone launches by framing the problem as natural-language-to-SQL generation, with systems adopted in real planning use cases.
+              Built multimodal reasoning systems for diagram understanding by fine-tuning a LLaVA architecture on a synthetic diagram QA task.
             </div>
           </li>
           <li>
