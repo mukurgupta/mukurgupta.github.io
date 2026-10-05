@@ -83,7 +83,7 @@
         <h2>Denoising & Diffusing Intelligence @ Granica </h2>
         <!-- <p class="tagline">Building and Breaking LLMs</p> -->
 
-        <p> I am a researcher at Granica AI, where I work on diffusion foundation models for structured data, building generative models for discrete and mixed-type tabular data. My work spans the pretraining, post-training, and evaluation of large diffusion models, including continuous and discrete diffusion. I am especially interested in this area because tabular data remains central to enterprise use cases, yet generative modeling for it is still far less explored than for language, vision, or speech. </p>
+        <p> I am a researcher at Granica AI, where I work on diffusion foundation models for structured data, building generative models for discrete and mixed-type tabular data. My work spans the pretraining, post-training, and evaluation of large diffusion models, including continuous and discrete diffusion (with one of my projects accepted to NeurIPS 2026). I am especially interested in this area because tabular data remains central to enterprise use cases, yet generative modeling for it is still far less explored than for language, vision, or speech. </p>
 
         <p> I completed my M.S. in Computer Science at Columbia University through the Advanced Master’s in Research (AMR) program, where I was advised by Prof. Kathleen McKeown and funded through my work as a Graduate Research Assistant in the NLP Lab. In the NLP Lab, I contributed to a DARPA-funded project on multimodal video understanding for cross-cultural dialogue, which involved large-scale synthetic video corpus generation and post-training video-language models for future activity prediction and abductive reasoning. Before that, I earned my B.Tech from IIT Kharagpur, graduating first in my program by GPA.</p>
 
@@ -126,11 +126,31 @@
 <div class="publications">
 
   <div class="pub-item">
+    <h4 class="pub-title">DiffLTM: Continuous Diffusions Large Tabular Models for Conditional Generation</h4>
+    <p class="pub-authors">
+      Alankrita Bhatt, <strong>Mukur Gupta</strong>, Prof. Andrea Montanari (Stanford University), Pulkit Tandon
+    </p>
+    <p class="pub-venue"><em>Under Review</em></p>
+    <p class="pub-description">
+      Proposed a new method for conditional generation in large tabular models with mixed numerical and categorical data, particularly for rare subpopulations and high-cardinality features. Developed a continuous diffusion model with theoretically justified cross-entropy training for categorical variables, introduced methods and metrics for rare-condition generation, and demonstrated state-of-the-art performance on both unconditional and conditional generation.
+    </p>
+    <p class="pub-links">
+      Links: TBA
+    </p>
+    <div class="pub-tags">
+      <span class="tag">Denoising Diffusion Models</span>
+      <span class="tag">Discrete Generative Modeling</span>
+    </div>
+  </div>
+
+
+
+  <div class="pub-item">
     <h4 class="pub-title">Generating from Discrete Distributions Using Diffusions: Insights from Random Constraint Satisfaction Problems</h4>
     <p class="pub-authors">
       Alankrita Bhatt, <strong>Mukur Gupta</strong>, Germain Kolossov, Prof. Andrea Montanari (Stanford University)
     </p>
-    <p class="pub-venue"><em>Under Review</em>, 2025</p>
+    <p class="pub-venue"><em>NeurIPS</em>, 2026</p>
     <p class="pub-description">
       Studied generative models for uniformly sampling solutions of random satisfiability formulas and compared them with theoretically optimal methods. Showed that continuous diffusions with score matching outperform masked discrete diffusions, that learned diffusions can achieve theoretically optimal accuracy, and that noise-reweighting improves denoising over random noising.
     </p>
@@ -338,9 +358,9 @@
             <div class="item-content">
               <strong>Research Scientist</strong> — Granica AI, CA<br>
               <em>June 2025 - Present</em><br>
-              Building Large Tabular Models (LTMs): pre-training and post-training diffusion foundation models for tabular data (https://www.granica.ai/large-tabular-models); 
+              Building Large Tabular Models (LTMs): pre-training and post-training diffusion foundation models for tabular data (https://www.granica.ai/large-tabular-models); Achieved SOTA unconditional and conditional generation performance;
               Evaluations: contributed to a scalable eval harness for generative tasks on structured data (https://github.com/granica-ai/ltm-eval); 
-              Diffusion Modeling: showed that continuous diffusion with score matching outperforms masked discrete diffusion on an NP-hard sampling problem (https://arxiv.org/pdf/2603.20589); 
+              Diffusion Modeling: showed that continuous diffusion with score matching outperforms masked discrete diffusion on an NP-hard sampling problem -- part of this work accepted at NeurIPS 2026(https://arxiv.org/pdf/2603.20589); 
               Data Sampling: drove significant gains in Click-Through Rate for a social media giant with 400 million monthly active users with Granica's ICLR award-winning data selection research.
             </div>
           </li>
